@@ -50,7 +50,7 @@
                         <a href="sobrenosotros.php" class="nav-item nav-link">Sobre Nosotros</a>
                         <a href="servicios.php" class="nav-item nav-link">Servicios</a>
                         <a href="menu.php" class="nav-item nav-link active">Menu</a>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        <a href="contacto.php" class="nav-item nav-link">Contacto</a>
                         <a href="iniciodeseccion.php" class="nav-item nav-link">Inicio de Sesion</a>
                     </div>
                     <a href="" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
