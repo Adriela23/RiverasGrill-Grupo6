@@ -179,10 +179,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="navbar-nav ms-auto py-0 pe-4">
             <a href="home.php" class="nav-item nav-link active">Inicio</a>
             <a href="sobrenosotros.php" class="nav-item nav-link">Sobre Nosotros</a>
-            <a href="service.html" class="nav-item nav-link">Servicios</a>
-            <a href="menu.html" class="nav-item nav-link">Menú</a>
+            <a href="servicios.php" class="nav-item nav-link">Servicios</a>
+            <a href="menu.php" class="nav-item nav-link">Menu</a>
             <a href="contact.html" class="nav-item nav-link">Contacto</a>
-            <a href="login.php" class="nav-item nav-link">Inicio de Sección</a>
+            <a href="login.php" class="nav-item nav-link">Inicio de Sesión</a>
         </div>
         <a href="reserva.php" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
     </div>
