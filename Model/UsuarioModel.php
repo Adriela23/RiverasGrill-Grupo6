@@ -37,13 +37,13 @@
         }
     }
 
-    function ActualizarPerfilModel($consecutivo,$identificacion,$nombre,$correo,$rol)
+    function ActualizarPerfilModel()
     {
         try
         {
             $enlace = AbrirBD();
 
-            $sentencia = "CALL ActualizarPerfil('$consecutivo','$identificacion','$nombre','$correo','$rol')";
+            $sentencia = "CALL ActualizarPerfil()";
             $resultado = $enlace -> query($sentencia);
 
             CerrarBD($enlace);
@@ -55,23 +55,6 @@
         }
     }
 
-    function CambiarEstadoUsuarioModel($consecutivo)
-    {
-        try
-        {
-            $enlace = AbrirBD();
-
-            $sentencia = "CALL CambiarEstadoUsuario('$consecutivo')";
-            $resultado = $enlace -> query($sentencia);
-
-            CerrarBD($enlace);
-            return $resultado;
-        }
-        catch(Exception $ex)
-        {
-            return false;
-        }
-    }
 
     function ConsultarRolesModel()
     {
