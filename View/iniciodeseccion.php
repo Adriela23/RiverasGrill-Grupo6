@@ -182,7 +182,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="service.html" class="nav-item nav-link">Servicios</a>
             <a href="menu.html" class="nav-item nav-link">Menú</a>
             <a href="contact.html" class="nav-item nav-link">Contacto</a>
-            <a href="login.php" class="nav-item nav-link">Inicio de Sesión</a>
+            <a href="login.php" class="nav-item nav-link">Inicio de Sección</a>
         </div>
         <a href="reserva.php" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
     </div>

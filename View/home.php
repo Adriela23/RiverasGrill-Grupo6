@@ -34,7 +34,6 @@
 
 <body>
     <div class="container-xxl bg-white p-0">
-
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
@@ -47,7 +46,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="home.php" class="nav-item nav-link active">Inicio</a>
                         <a href="sobrenosotros.php" class="nav-item nav-link">Sobre Nosotros</a>
                         <a href="service.html" class="nav-item nav-link">Servicios</a>
                         <a href="menu.html" class="nav-item nav-link">Menu</a>
@@ -121,7 +120,6 @@
             </div>
         </div>
         <!-- Service End -->
-
 
         <!-- About Start -->
         <div class="container-xxl py-5">

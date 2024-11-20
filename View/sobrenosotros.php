@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,97 +28,48 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- Estilos personalizados -->
-    <style>
-        /* Barra de navegación fija */
-        nav.navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 9999;
-        }
-
-        
-        body {
-            margin-top: 80px; 
-        }
-
-        
-        .sobre-nosotros-header {
-            background-color: var(--primary); 
-            color: #F1F8FF; 
-            padding: 40px;
-            text-align: center;
-        }
-
-        
-        .sobre-nosotros-header img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        
-        .features-list {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 40px;
-        }
-
-        .feature-item {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-            background-color: #f8f9fa;
-            margin: 10px;
-            border-radius: 8px;
-        }
-
-        .feature-item h4 {
-            color: var(--primary);
-        }
-
-        .feature-item p {
-            color: #333;
-        }
-
-        
-        footer {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
 </head>
+
 <body>
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-        <a href="home.php" class="navbar-brand p-0">
-            <h1 class="text-primary m-0"><img src="img/Logo.png" alt="Logo"> RiverasGrill</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0 pe-4">
-                <a href="home.php" class="nav-item nav-link active">Inicio</a>
-                <a href="sobrenosotros.php" class="nav-item nav-link">Sobre Nosotros</a>
-                <a href="service.html" class="nav-item nav-link">Servicios</a>
-                <a href="menu.html" class="nav-item nav-link">Menu</a>
-                <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                <a href="iniciodeseccion.php" class="nav-item nav-link">Inicio de seccion</a>
+    <div class="container-xxl position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <a href="home.php" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><img src="img/Logo.png" alt="Logo"> RiverasGrill</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="home.php" class="nav-item nav-link active">Inicio</a>
+                    <a href="sobrenosotros.php" class="nav-item nav-link">Sobre Nosotros</a>
+                    <a href="servicios.php" class="nav-item nav-link">Servicios</a>
+                    <a href="menu.php" class="nav-item nav-link">Menu</a>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    <a href="iniciodeseccion.php" class="nav-item nav-link">Inicio de sesión</a>
+                </div>
+                <a href="" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
             </div>
+
             <a href="reserva.php" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
         </div>
     </nav>
+        </nav>
+    </div>
     <!-- Navbar End -->
 
     <!-- Sección "Sobre Nosotros" -->
-    <div class="sobre-nosotros-header">
-        <h1>Sobre Nosotros</h1>
-        <p>Somos una empresa comprometida con la calidad y el servicio, ofreciendo productos frescos y deliciosos en un ambiente único. Con el esfuerzo y dedicación de todo nuestro equipo, buscamos siempre superar las expectativas de nuestros clientes.</p>
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        <div class="container my-5 py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-3 text-white animated slideInLeft">Sobre Nosotros</h1>
+                    <p class="text-white animated slideInLeft mb-4 pb-2">Somos una empresa comprometida con la calidad y el servicio, ofreciendo productos frescos y deliciosos en un ambiente único. Con el esfuerzo y dedicación de todo nuestro equipo, buscamos siempre superar las expectativas de nuestros clientes.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Imagen destacada -->
@@ -126,37 +78,62 @@
     </div>
 
     <!-- Características/Lo que ofrecemos -->
-    <div class="container">
-        <h2 class="text-center my-4">¿Qué ofrecemos?</h2>
-        <div class="features-list">
-            <div class="feature-item">
-                <h4>Comida fresca</h4>
-                <p>Usamos solo ingredientes frescos y de la mejor calidad en todos nuestros platos.</p>
+<div class="container">
+    <h2 class="text-center my-4" style="color: #d66c0a;">¿Qué ofrecemos?</h2>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-item d-flex align-items-center mb-4">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2" style="color: #d66c0a;">
+                        <span>Comida fresca</span>
+                    </h5>
+                    <small class="fst-italic">Usamos solo ingredientes frescos y de la mejor calidad en todos nuestros platos.</small>
+                </div>
             </div>
-            <div class="feature-item">
-                <h4>Ambiente único</h4>
-                <p>Disfruta de un ambiente acogedor y cálido para compartir con tu familia y amigos.</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-item d-flex align-items-center mb-4">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2" style="color: #d66c0a;">
+                        <span>Ambiente único</span>
+                    </h5>
+                    <small class="fst-italic">Disfruta de un ambiente acogedor y cálido para compartir con tu familia y amigos.</small>
+                </div>
             </div>
-            <div class="feature-item">
-                <h4>Atención al cliente</h4>
-                <p>Nuestro equipo está siempre disponible para ofrecerte un servicio de calidad.</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-item d-flex align-items-center mb-4">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2" style="color: #d66c0a;">
+                        <span>Atención al cliente</span>
+                    </h5>
+                    <small class="fst-italic">Nuestro equipo está siempre disponible para ofrecerte un servicio de calidad.</small>
+                </div>
             </div>
-            <div class="feature-item">
-                <h4>Precios competitivos</h4>
-                <p>Ofrecemos productos de alta calidad a precios justos y accesibles.</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-item d-flex align-items-center mb-4">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2" style="color: #d66c0a;">
+                        <span>Precios competitivos</span>
+                    </h5>
+                    <small class="fst-italic">Ofrecemos productos de alta calidad a precios justos y accesibles.</small>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center py-4">
-            <p>&copy; 2024 RiverasGrill. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+<!-- Footer -->
+<footer>
+    <div class="container text-center py-4">
+        <p>&copy; 2024 RiverasGrill. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
-    <!-- Bootstrap JS y dependencias -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS y dependencias -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
