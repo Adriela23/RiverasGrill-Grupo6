@@ -88,14 +88,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="home.php">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="sobrenosotros.php">Sobre Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
-            <li class="nav-item"><a class="nav-link active" href="contact.php">Contacto</a></li>
-            <li class="nav-item"><a class="nav-link" href="login.php">Inicio de Sesión</a></li>
-        </ul>
-        <a href="reserva.php" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
+        <a href="home.php" class="nav-item nav-link active">Inicio</a>
+                        <a href="sobrenosotros.php" class="nav-item nav-link">Sobre Nosotros</a>
+                        <a href="servicios.php" class="nav-item nav-link">Servicios</a>
+                        <a href="menu.php" class="nav-item nav-link active">Menu</a>
+                        <a href="contacto.php" class="nav-item nav-link">Contacto</a>
+                        <a href="iniciodeseccion.php" class="nav-item nav-link">Inicio de Sesion</a>
+                    </div>
+                    <a href="reserva.php" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
     </div>
 </nav>
 
