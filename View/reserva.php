@@ -109,10 +109,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="home.php">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="sobrenosotros.php">Sobre Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-            <li class="nav-item"><a class="nav-link" href="login.php">Inicio de Sesión</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.php">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.php">Menú</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.php">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="iniciodeseccion.php">Inicio de Sesión</a></li>
         </ul>
         <a href="reserva.php" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
     </div>

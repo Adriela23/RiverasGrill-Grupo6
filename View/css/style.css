@@ -492,6 +492,38 @@
     border-radius: 25px; /* Esquinas redondeadas */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: fixed;
+    bottom: 20px; /* Ajusta según sea necesario */
+    width: 100%;
+    z-index: 10;
+}
 
+.social-icons .btn-social {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff; /* Asegúrate de que el color inicial sea blanco */
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    background-color: transparent; /* Para evitar interferencias */
+    box-shadow: none; /* Para prevenir estilos no deseados */
+}
+
+.social-icons .btn-social:hover {
+    background-color: #fff;
+    color: #0F172B;
+    transform: scale(1.1);
+    text-decoration: none;
+}
 
 

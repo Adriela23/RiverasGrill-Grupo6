@@ -47,13 +47,12 @@
                     <a href="sobrenosotros.php" class="nav-item nav-link">Sobre Nosotros</a>
                     <a href="servicios.php" class="nav-item nav-link">Servicios</a>
                     <a href="menu.php" class="nav-item nav-link">Menu</a>
-                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    <a href="contacto.php" class="nav-item nav-link">Contacto</a>
                     <a href="iniciodeseccion.php" class="nav-item nav-link">Inicio de sesión</a>
                 </div>
                 <a href="" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
             </div>
 
-            <a href="reserva.php" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
         </div>
     </nav>
         </nav>
