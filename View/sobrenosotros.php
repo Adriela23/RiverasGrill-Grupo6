@@ -38,26 +38,26 @@
             z-index: 9999;
         }
 
-        /* Espacio para que el contenido no se solape con el menú */
+        
         body {
-            margin-top: 80px; /* Ajusta según la altura de tu menú */
+            margin-top: 80px; 
         }
 
-        /* Estilos para la sección "Sobre Nosotros" */
+        
         .sobre-nosotros-header {
-            background-color: var(--primary); /* Fondo naranja */
-            color: white; /* Texto blanco */
+            background-color: var(--primary); 
+            color: #F1F8FF; 
             padding: 40px;
             text-align: center;
         }
 
-        /* Estilos para la imagen */
+        
         .sobre-nosotros-header img {
             max-width: 100%;
             height: auto;
         }
 
-        /* Estilos para la lista de características */
+        
         .features-list {
             display: flex;
             justify-content: space-between;
@@ -81,7 +81,7 @@
             color: #333;
         }
 
-        /* Estilos para el pie de página */
+        
         footer {
             background-color: #222;
             color: white;
@@ -107,6 +107,7 @@
                 <a href="service.html" class="nav-item nav-link">Servicios</a>
                 <a href="menu.html" class="nav-item nav-link">Menu</a>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                <a href="iniciodeseccion.php" class="nav-item nav-link">Inicio de seccion</a>
             </div>
             <a href="" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
         </div>

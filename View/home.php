@@ -52,6 +52,7 @@
                         <a href="service.html" class="nav-item nav-link">Servicios</a>
                         <a href="menu.html" class="nav-item nav-link">Menu</a>
                         <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        <a href="iniciodeseccion.php" class="nav-item nav-link">Inicio de seccion</a>
                     </div>
                     <a href="" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
                 </div>
