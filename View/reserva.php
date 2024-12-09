@@ -80,11 +80,7 @@
     <title>Reservar Evento</title>
     <!-- Estilos básicos -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-        }
+      
         form {
             max-width: 400px;
             margin: auto;
