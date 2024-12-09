@@ -1,94 +1,52 @@
-<?php
-// Simulación de envío de mensaje sin conexión a la base de datos
-$messageSent = false;
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $mensaje = $_POST['mensaje'];
-
-    $messageSent = true;
-    $successMessage = "¡Gracias, $nombre! Tu mensaje ha sido enviado con éxito. (Simulación sin base de datos)";
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Rivera's Grill</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        .background {
-            background: url('img/menu-1.jpg') no-repeat center center/cover;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-        .overlay {
-            background-color: rgba(15, 23, 43, 0.7);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-        .card {
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-            padding: 20px;
-        }
-        .btn-primary {
-            background-color: #e76920;
-            border: none;
-        }
-        .btn-primary:hover {
-            background-color: #0F172B;
-            color: #fff;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .social-icons a {
-            font-size: 24px;
-            color: #fff;
-            transition: transform 0.3s ease;
-        }
-        .social-icons a:hover {
-            transform: scale(1.2);
-        }
-        .success {
-            color: green;
-        }
-    </style>
-</head>
-<body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-    <a href="home.php" class="navbar-brand p-0">
-        <h1 class="text-primary m-0"><img src="img/Logo.png" alt="Logo" style="height: 50px;"> Rivera's Grill</h1>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-        <a href="home.php" class="nav-item nav-link active">Inicio</a>
+<head>
+    <meta charset="utf-8">
+    <title>RiverasGrill & MexicanFood</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+
+        <!-- Navbar Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><img src="img/Logo.png" alt="Logo"> RiverasGrill</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="home.php" class="nav-item nav-link active">Inicio</a>
                         <a href="sobrenosotros.php" class="nav-item nav-link">Sobre Nosotros</a>
                         <a href="servicios.php" class="nav-item nav-link">Servicios</a>
                         <a href="menu.php" class="nav-item nav-link active">Menu</a>
@@ -96,58 +54,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <a href="iniciodeseccion.php" class="nav-item nav-link">Inicio de Sesion</a>
                     </div>
                     <a href="reserva.php" class="btn btn-primary py-2 px-4">Reserva tu evento</a>
-    </div>
-</nav>
-
-<div class="background"></div>
-<div class="overlay"></div>
-
-<!-- Formulario de Contacto -->
-<div class="container my-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <h2 class="text-center text-primary mb-4">Contáctanos</h2>
-
-                <!-- Mostramos el mensaje de éxito si se envió -->
-                <?php if ($messageSent): ?>
-                    <p class="success"><?= $successMessage ?></p>
-                <?php endif; ?>
-
-                <form action="contact.php" method="POST">
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+            </nav>
+        </div>
+          <!-- Hero Start -->
+          <div class="container-xxl py-5 bg-dark hero-header mb-5">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-3 text-white animated slideInLeft">contactanos <br>para tu evento especial</h1>
+                        <p class="text-white animated slideInLeft mb-4 pb-2">Déjate llevar por los sabores de nuestros platillos tradicionales, ideales para cada momento.</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                     </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
-<!-- Íconos de Redes Sociales -->
-<div class="social-icons">
-    <a class="btn-social" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a class="btn-social" href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a class="btn-social" href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a class="btn-social" href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-</div>
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-</body>
-</html>
+        <!-- Hero End -->
