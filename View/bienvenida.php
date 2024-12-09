@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['nombre'])) { // Verifica si el usuario está logueado
+    header("Location: index.php"); // Redirige al formulario de inicio
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +53,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                    <a href="home.php" class="nav-item nav-link active">Inicio</a>
+                        <a href="home.php" class="nav-item nav-link active">Inicio</a>
                         <a href="sobrenosotros.php" class="nav-item nav-link">Sobre Nosotros</a>
                         <a href="servicios.php" class="nav-item nav-link">Servicios</a>
                         <a href="menu.php" class="nav-item nav-link active">Menu</a>
@@ -57,13 +64,15 @@
                 </div>
             </nav>
         </div>
-          <!-- Hero Start -->
-          <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
             <div class="container my-5 py-5">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6 text-center text-lg-start">
-                        <h1 class="display-3 text-white animated slideInLeft">Reserva y no te pierdas <br>el delicioso sabor de nuestra comida</h1>
-                        <p class="text-white animated slideInLeft mb-4 pb-2">Déjate llevar por los sabores de nuestros platillos tradicionales, ideales para cada momento.</p>
+                        <h1 class="display-3 text-white animated slideInLeft">BIENVENIDO <br></h1>
+                        <p class="text-white animated slideInLeft mb-4 pb-2">aprovecha nuestras ofertas en los diferentes productos solo por iniciar seccion.</p>
                     </div>
                     <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                     </div>
@@ -71,78 +80,7 @@
             </div>
         </div>
         <!-- Hero End -->
-        <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservar Evento</title>
-    <!-- Estilos básicos -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-        }
-        form {
-            max-width: 400px;
-            margin: auto;
-            background-color: #f9f9f9;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        input, textarea, select, button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        button {
-            background-color: #007BFF;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-
-<body>
-    <h1>Reservar Evento</h1>
-    <form action="procesar_reserva.php" method="POST">
-        <label for="nombre">Nombre Completo:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-        
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-        
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
-        
-        <label for="fecha">Fecha del Evento:</label>
-        <input type="date" id="fecha" name="fecha" required>
-        
-        <label for="hora">Hora del Evento:</label>
-        <input type="time" id="hora" name="hora" required>
-        
-        <label for="personas">Número de Personas:</label>
-        <input type="number" id="personas" name="personas" min="1" placeholder="Cantidad de invitados" required>
-        
-        <label for="mensaje">Comentarios/Detalles:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Especifica algún detalle importante (opcional)"></textarea>
-        
-        <button type="submit">Reservar</button>
-    </form>
+    </div>
 </body>
 
 </html>

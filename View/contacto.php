@@ -71,3 +71,96 @@
             </div>
         </div>
         <!-- Hero End -->
+        <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Recogemos los datos del formulario
+    $nombre = htmlspecialchars($_POST['nombre']);
+    $fecha = $_POST['fecha'];
+    $hora = $_POST['hora'];
+
+    // Validación básica
+    if (empty($nombre) || empty($fecha) || empty($hora)) {
+        $mensaje = "Por favor, completa todos los campos.";
+    } else {
+        $mensaje = "Formulario enviado con éxito.<br>Nombre: $nombre<br>Fecha: $fecha<br>Hora: $hora";
+    }
+}
+?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario en PHP</title>
+    <style>
+       
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #e76920;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #e76920;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d05d1c;
+        }
+        .mensaje {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #e76920;
+            border-radius: 4px;
+            background-color: #ffe5d0;
+            color: #0F172B;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario</h2>
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <form method="POST" action="">
+            <div class="form-group">
+                <label for="nombre">numero de telefono:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <form method="POST" action="">
+            <div class="form-group">
+                <label for="nombre">correo electronico:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <?php if (isset($mensaje)): ?>
+            <div class="mensaje">
+                <?php echo $mensaje; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</body>
+</html>
