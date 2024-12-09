@@ -63,7 +63,7 @@
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="display-3 text-white animated slideInLeft">Disfruta de una<br>Deliciosa experiencia</h1>
                             <p class="text-white animated slideInLeft mb-4 pb-2">Nuestros increíbles platillos te llevarán en un viaje culinario a México, donde cada bocado está lleno de auténticos sabores y aromas tradicionales. Desde los tacos más emblemáticos hasta los guisos regionales más exquisitos, cada plato es una celebración de la rica cultura gastronómica mexicana.</p>
-                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Reserva tu evento</a>
+                            <a href="reserva.php" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Reserva tu evento</a>
                         </div>
 
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
@@ -154,7 +154,7 @@
                                 
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Leer Mas</a>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="sobrenosotros.php">Leer Mas</a>
                     </div>
                 </div>
             </div>
@@ -342,11 +342,11 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                        <a class="btn btn-link" href="">Sobre Nosotros</a>
-                        <a class="btn btn-link" href="">Contactenos</a>
-                        <a class="btn btn-link" href="">Reservaciones</a>
-                        <a class="btn btn-link" href="">Politica de Privacidad</a>
-                        <a class="btn btn-link" href="">Terminos & Condiciones</a>
+                        <a class="btn btn-link" href="sobrenosotros.php">Sobre Nosotros</a>
+                        <a class="btn btn-link" href="contacto.php">Contactenos</a>
+                        <a class="btn btn-link" href="reserva.php">Reservaciones</a>
+                        <a class="btn btn-link" href="menu.php">menu</a>
+                        <a class="btn btn-link" href="iniciodeseccion.php">inicio de seccion</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contacto</h4>
