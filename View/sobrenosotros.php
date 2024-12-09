@@ -73,7 +73,7 @@
 
     <!-- Imagen destacada -->
     <div class="container text-center my-5">
-        <img src="img/about-3.jpg" alt="Nuestra Empresa" class="img-fluid" style="max-width: 600px; height: auto;">
+        <img src="img/about-3.jpg" alt="Nuestra Empresa" class="img-fluid" style="max-width: 500px; height: auto;">
     </div>
 
     <!-- Características/Lo que ofrecemos -->
