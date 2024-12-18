@@ -71,58 +71,7 @@
             </div>
         </div>
         <!-- Hero End -->
-        <?php
-session_start();
 
-$archivoUsuarios = 'usuarios.json';
-$mensaje = "";
-
-// Crear el archivo JSON si no existe
-if (!file_exists($archivoUsuarios)) {
-    file_put_contents($archivoUsuarios, json_encode([]));
-}
-
-// Leer usuarios existentes
-$usuarios = json_decode(file_get_contents($archivoUsuarios), true);
-
-// Registrar un nuevo usuario
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['registro'])) {
-    $nombre = htmlspecialchars($_POST['nombre']);
-    $email = htmlspecialchars($_POST['email']);
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-
-    if (empty($nombre) || empty($email) || empty($_POST['password'])) {
-        $mensaje = "Todos los campos son obligatorios.";
-    } elseif (isset($usuarios[$email])) {
-        $mensaje = "El correo ya está registrado.";
-    } else {
-        $usuarios[$email] = [
-            'nombre' => $nombre,
-            'password' => $password,
-        ];
-        file_put_contents($archivoUsuarios, json_encode($usuarios));
-        $mensaje = "Registro exitoso. Ahora puedes iniciar sesión.";
-    }
-}
-
-// Iniciar sesión
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
-    $email = htmlspecialchars($_POST['email']);
-    $password = $_POST['password'];
-
-    if (empty($email) || empty($password)) {
-        $mensaje = "Todos los campos son obligatorios.";
-    } elseif (!isset($usuarios[$email])) {
-        $mensaje = "El usuario no existe.";
-    } elseif (!password_verify($password, $usuarios[$email]['password'])) {
-        $mensaje = "Contraseña incorrecta.";
-    } else {
-        $_SESSION['nombre'] = $usuarios[$email]['nombre'];
-        header("Location: bienvenida.php");
-        exit();
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -165,10 +114,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
         }
     </style>
 </head>
-<body>
-    <div class="container">
+<div class="container">
         <h2>Iniciar Sesión</h2>
-        <form method="POST" action="">
+        <!-- Formulario de inicio de sesión -->
+        <form method="POST" action="procesar_inicioSesion.php">
             <div class="form-group">
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
@@ -181,7 +130,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
         </form>
 
         <h2>Crear Cuenta</h2>
-        <form method="POST" action="">
+        <!-- Formulario de creación de cuenta -->
+        <form method="POST" action="procesar_registro.php">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -198,12 +148,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
         </form>
 
         <?php if (!empty($mensaje)): ?>
-            <div class="mensaje">
-                <?php echo $mensaje; ?>
-            </div>
+        <div class="mensaje">
+            <?php echo $mensaje; ?>
+        </div>
         <?php endif; ?>
     </div>
 </body>
 </html>
-<?php
-
