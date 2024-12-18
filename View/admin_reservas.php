@@ -1,19 +1,18 @@
 <?php
-// Conexión a la base de datos
 $servername = "localhost";
-$username = "root"; // Usuario de MySQL
-$password = "hola123"; // Contraseña de MySQL
-$dbname = "proyecto"; // Nombre de la base de datos
+$username = "root"; 
+$password = "hola123";
+$dbname = "proyecto"; 
 
-// Crear la conexión
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar la conexión
+
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Consultar las reservas
+
 $sql = "SELECT id, nombre, email, telefono, fecha, hora, personas, mensaje FROM reservas";
 $result = $conn->query($sql);
 ?>
@@ -148,7 +147,7 @@ $result = $conn->query($sql);
                     <th>Personas</th>
                     <th>Mensaje</th>
                   </tr>";
-            // Mostrar los datos de cada reserva
+            
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>
                         <td>" . $row["id"] . "</td>
@@ -165,7 +164,7 @@ $result = $conn->query($sql);
         } else {
             echo "<p class='no-reservations'>No hay reservas registradas.</p>";
         }
-        // Cerrar la conexión
+        
         $conn->close();
         ?>
     </div>

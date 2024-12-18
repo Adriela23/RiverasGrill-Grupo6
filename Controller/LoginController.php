@@ -1,5 +1,5 @@
 <?php
-    #En fase de pruebas
+
     include_once $_SERVER["DOCUMENT_ROOT"] . '/Model/LoginModel.php';
 
     if(session_status() == PHP_SESSION_NONE) {

@@ -1,25 +1,23 @@
 <?php
 session_start();
+$servername = "localhost";  
+$username = "root";         
+$password = "hola123";      
+$dbname = "Proyecto";       
 
-// Datos de conexión a MySQL
-$servername = "localhost";  // Cambia esto si tu servidor MySQL tiene un nombre distinto
-$username = "root";         // Nombre de usuario de MySQL
-$password = "hola123";      // Contraseña de MySQL
-$dbname = "Proyecto";       // Nombre de la base de datos
 
-// Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexión
+
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Consultar los usuarios
+
 $sql = "SELECT id, nombre, email, fecha_registro FROM crearUsuarios";
 $result = $conn->query($sql);
 
-// Cerrar la conexión
+
 $conn->close();
 ?>
 

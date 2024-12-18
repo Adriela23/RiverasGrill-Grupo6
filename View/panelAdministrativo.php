@@ -168,7 +168,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       const ctx = document.getElementById('salesChart').getContext('2d');
       
-      // Datos de ejemplo: Ventas por mes
+
       const data = {
         labels: [
           "Enero", "Febrero", "Marzo", 
@@ -189,7 +189,7 @@
         }]
       };
 
-      // Configuración de la gráfica
+
       const config = {
         type: 'bar',
         data: data,
@@ -224,7 +224,7 @@
         }
       };
 
-      // Renderización de la gráfica
+
       new Chart(ctx, config);
     });
   </script>

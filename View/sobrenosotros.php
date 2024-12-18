@@ -6,33 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros - RiverasGrill</title>
 
-    <!-- Favicon -->
+
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+ 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
+ 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navbar Start -->
+
     <div class="container-xxl position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
             <a href="home.php" class="navbar-brand p-0">
@@ -57,9 +57,9 @@
     </nav>
         </nav>
     </div>
-    <!-- Navbar End -->
 
-    <!-- Sección "Sobre Nosotros" -->
+
+ 
     <div class="container-xxl py-5 bg-dark hero-header mb-5">
         <div class="container my-5 py-5">
             <div class="row align-items-center g-5">
@@ -71,12 +71,12 @@
         </div>
     </div>
 
-    <!-- Imagen destacada -->
+
     <div class="container text-center my-5">
         <img src="img/about-3.jpg" alt="Nuestra Empresa" class="img-fluid" style="max-width: 500px; height: auto;">
     </div>
 
-    <!-- Características/Lo que ofrecemos -->
+
 <div class="container">
     <h2 class="text-center my-4" style="color: #d66c0a;">¿Qué ofrecemos?</h2>
     <div class="row g-4">
@@ -123,14 +123,13 @@
     </div>
 </div>
 
-<!-- Footer -->
+
 <footer>
     <div class="container text-center py-4">
         <p>&copy; 2024 RiverasGrill. Todos los derechos reservados.</p>
     </div>
 </footer>
 
-<!-- Bootstrap JS y dependencias -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>

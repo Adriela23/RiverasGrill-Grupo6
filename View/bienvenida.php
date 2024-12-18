@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (!isset($_SESSION['nombre'])) { // Verifica si el usuario está logueado
-    header("Location: index.php"); // Redirige al formulario de inicio
+if (!isset($_SESSION['nombre'])) { 
+    header("Location: index.php"); 
     exit();
 }
 ?>
@@ -15,34 +15,27 @@ if (!isset($_SESSION['nombre'])) { // Verifica si el usuario está logueado
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-xxl bg-white p-0">
 
-        <!-- Navbar Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
@@ -64,9 +57,7 @@ if (!isset($_SESSION['nombre'])) { // Verifica si el usuario está logueado
                 </div>
             </nav>
         </div>
-        <!-- Navbar End -->
 
-        <!-- Hero Start -->
         <div class="container-xxl py-5 bg-dark hero-header mb-5">
             <div class="container my-5 py-5">
                 <div class="row align-items-center g-5">
@@ -79,7 +70,7 @@ if (!isset($_SESSION['nombre'])) { // Verifica si el usuario está logueado
                 </div>
             </div>
         </div>
-        <!-- Hero End -->
+
     </div>
 </body>
 
