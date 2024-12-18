@@ -126,7 +126,10 @@
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit" name="login">Iniciar Sesión</button>
+            <a href="home.php">
+             <button type="button">Iniciar Sesión</button>
+          </a>
+
         </form>
 
         <h2>Crear Cuenta</h2>

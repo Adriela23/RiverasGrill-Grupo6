@@ -40,6 +40,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
             // Verificar si la contraseña es correcta
             if (password_verify($password, $usuario['password'])) {
                 $_SESSION['nombre'] = $usuario['nombre'];
+                $_SESSION['email'] = $email;
+
+                // Establecer mensaje de bienvenida
+                $_SESSION['mensaje_bienvenida'] = "¡Bienvenido, " . $usuario['nombre'] . "! Has iniciado sesión con éxito.";
+
+                // Redirigir a bienvenida.php
                 header("Location: bienvenida.php");
                 exit();
             } else {
